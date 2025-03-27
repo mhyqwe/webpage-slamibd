@@ -25,7 +25,7 @@
 
 
   <title>IBD-SLAM: Learning Image-Based Depth Fusion for Generalizable SLAM</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <!--link rel="icon" type="image/x-icon" href="static/images/favicon.ico"-->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -119,8 +119,8 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/ibdslam_finalversion.mov"
-        type="video/mov">
+        <source src="static/videos/ibdslam_finalversion.mp4"
+        type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         IBD-SLAM is a feed-forward 3D scene reconstruction approach with robust generalization capabilities.
@@ -155,7 +155,7 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/basenet_image.pdf" alt="MY ALT TEXT"/>
+        <img src="static/images/basenet_image.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           To render the target view, the method starts by selecting a set of K reference views and extracting their image features using a shared encoder, along with calculating the xyz-maps from depth information and camera parameters. For each point along the ray, the system projects it onto all K reference views and samples the feature vector, color, and xyz values from the reference views. These values are then aggregated using the corresponding feature vectors and relative directions to compute the blending weights for both color and xyz. The final color and xyz values are determined as a weighted sum of the source view. Additionally, the sigma value for the rendering process is predicted based on the feature and viewing directions. In the tracking step, the method uses RGB information to match points between the target and reference views, and by minimizing the distances between the matched xyz points, it optimizes the target camera.
         </h2>
