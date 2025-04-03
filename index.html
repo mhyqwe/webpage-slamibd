@@ -148,6 +148,19 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="Overview" class="carousel results-carousel">
+      <!-- Your image here -->
+      <img src="static/images/basenet_image.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        To render the target view, the method starts by selecting a set of K reference views and extracting their image features using a shared encoder, along with calculating the xyz-maps from depth information and camera parameters. For each point along the ray, the system projects it onto all K reference views and samples the feature vector, color, and xyz values from the reference views. These values are then aggregated using the corresponding feature vectors and relative directions to compute the blending weights for both color and xyz. The final color and xyz values are determined as a weighted sum of the source view. Additionally, the sigma value for the rendering process is predicted based on the feature and viewing directions. In the tracking step, the method uses RGB information to match points between the target and reference views, and by minimizing the distances between the matched xyz points, it optimizes the target camera.
+      </h2>
+      </div>
+    </div>
+</div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -156,16 +169,30 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/basenet_image.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/reconstruct.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          To render the target view, the method starts by selecting a set of K reference views and extracting their image features using a shared encoder, along with calculating the xyz-maps from depth information and camera parameters. For each point along the ray, the system projects it onto all K reference views and samples the feature vector, color, and xyz values from the reference views. These values are then aggregated using the corresponding feature vectors and relative directions to compute the blending weights for both color and xyz. The final color and xyz values are determined as a weighted sum of the source view. Additionally, the sigma value for the rendering process is predicted based on the feature and viewing directions. In the tracking step, the method uses RGB information to match points between the target and reference views, and by minimizing the distances between the matched xyz points, it optimizes the target camera.
+          Reconstruction results for geometries and colors.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/reconstruct.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/detailed.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Reconstruction results for geometries and colors.
+          Detailed reconstruction results are available for the room (top three rows) and office (bottom three rows).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/reconstruct_scan.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Reconstruction results on ScanNet Dataset.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/scannet.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Detailed reconstruction results on ScanNet are available.
         </h2>
       </div>
       <div class="item">
@@ -245,8 +272,25 @@
 </section>
 <!-- End video carousel -->
 
-
-
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-4">Reconstruction</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe style="clip-path: inset(1px 1px)" src="https://sketchfab.com/playlists/embed?autostart=1&amp;autospin=0.25&amp;collection=3dbbcc908ef54a13b21ce4ff773d9a75" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" mozallowfullscreen="true" webkitallowfullscreen="true" width="100%" height="100%" frameborder="0"></iframe>
+          <!--iframe
+            src="https://sketchfab.com/models/YOUR_MODEL_ID/embed?autostart=1&amp;autospin=0.25"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            width="100%"
+            height="100%"
+            frameborder="0"
+          ></iframe-->
+        </div>
+      </div>
+    </div>
+</section>
 
 
 
@@ -265,17 +309,25 @@
 <!--End paper poster -->
 
 
-<!--BibTex citation
+<!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @InProceedings{Yin_2024_CVPR,
+        author    = {Yin, Minghao and Wu, Shangzhe and Han, Kai},
+        title     = {IBD-SLAM: Learning Image-Based Depth Fusion for Generalizable SLAM},
+        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        month     = {June},
+        year      = {2024},
+        pages     = {10563-10573}
+        }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+  <!--footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -291,7 +343,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer-->
 
 <!-- Statcounter tracking code -->
   
